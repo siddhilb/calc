@@ -7,25 +7,23 @@ division = False
 multiply = False
 add = False
 subtract = False
-operation = input('What operation? A for addition, s for subtraction, m for multiplication, and d for division. ')
-print("Type 'stop' to stop the program.")
-if operation == 'a' or operation == 's' or operation== 'd' or operation == 'm':
-    first = int(input('Input the first number! ',))
-#print('')
-    second = int(input('Input the second number! ',))
-#print('')
-if operation == 'a':
-    answer = first + second
-    print(first,'+',second,'is',answer) 
-if operation == 'm':
-    answer = first * second
-    print(first,'x',second,'is:',answer) 
-if operation == 'd':
-    answer = first / second
-    print(first,'÷',second,'is:',answer) 
-if operation == 's':
-     answer = first - second
-     print(first,'-',second,'is:',answer) 
-if operation == 'stop':
-    quit()
-operation = input('What operation? A for addition, s for subtraction, m for multiplication, and d for division. ',)
+while True:
+    operation = input('What operation? A for addition, S for subtraction, M for multiplication, and D for division. Q to quit. ')
+    operation = operation.lower()
+    if operation == 'q':
+        break
+    first = float(input('Input the first number! ',))
+    second = float(input('Input the second number! ',))
+    if operation == 'a':
+        answer = first + second
+        print(first,'+',second,'is',answer) 
+    if operation == 'm':
+        answer = first * second
+        print(first,'x',second,'is:',answer) 
+    if operation == 'd':
+        answer = first / second
+        print(first,'÷',second,'is:',answer) 
+    if operation == 's':
+        answer = first - second
+        print(first,'-',second,'is:',answer) 
+
