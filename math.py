@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-# Filename: add.py
+# Filename: math.py
 # Author: Siddhi
 #print('')
 division = False
